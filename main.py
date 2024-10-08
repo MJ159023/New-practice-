@@ -18,7 +18,7 @@ list_of_strings = ["hello", "Bob", "Cat", "Gred", "New"]
 special_word = "special"
 
 def find_special_word(var_1, var_2):
-    """Finds special character in string"""
+    """Finds special strings potion in a list of words"""
     # variables
     var_1.insert(1, var_2)
     counter = 0
