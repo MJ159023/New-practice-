@@ -19,8 +19,18 @@ special_word = "special"
 
 def find_special_word(var_1, var_2):
     """Finds special character in string"""
-    var_1 = var_1.insert(1, var_2)
-    print(var_1)
+    # variables
+    var_1.insert(1, var_2)
+    counter = 0
+    
+    # find special word
+    for loop in var_1:
+        counter += 1
 
-find_special_word(list_of_strings, special_word)
+        if loop ==  var_2:
+            postion = counter
+    
+    return postion
+
+print("the special word is in potion " + str(find_special_word(list_of_strings, special_word)))
 
